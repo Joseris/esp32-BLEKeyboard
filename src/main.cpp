@@ -234,6 +234,9 @@ uint8_t convertToKeyCode(VirtualKey virtualKey)
         case VK_a...VK_z:
             return 0x04 + (virtualKey - VK_a);
 
+        case VK_A...VK_Z:
+            return 0x04 + (virtualKey - VK_A);
+
         case VK_1...VK_9:
             return 0x1E + (virtualKey - VK_1);
         case VK_0:
